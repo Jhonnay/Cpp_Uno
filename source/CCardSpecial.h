@@ -8,10 +8,10 @@
 enum eSpecialType {
     Normal = 1,
 	Plus2,
-	Plus4,
 	Block,
 	Reverse,
     ColorChooser,
+    Plus4,
 	LastElementSpecial
 };
 
