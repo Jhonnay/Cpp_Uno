@@ -45,5 +45,5 @@ std::string CCard::DisplayCard() const {
         break;
     }
 
-    return "Card: Color - " + colorString + ", Number - " + std::to_string(m_nNumber) + "\n";
+    return "Card: Color - " + colorString + ", Number - " + std::to_string(m_nNumber);
 }

@@ -6,10 +6,12 @@
 
 
 enum eSpecialType {
-	Plus2 = 1,
+    Normal = 1,
+	Plus2,
 	Plus4,
 	Block,
 	Reverse,
+    ColorChooser,
 	LastElementSpecial
 };
 

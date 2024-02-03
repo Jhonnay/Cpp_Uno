@@ -17,7 +17,7 @@ void CCardSpecial::SetSpecialType(eSpecialType eType) {
 }
 
 bool CCardSpecial::IsSpecialCard() const {
-    return true;
+    return eSpecialCardType != eSpecialType::Normal ;
 }
 
 std::string CCardSpecial::DisplayCard() const {
@@ -37,10 +37,16 @@ std::string CCardSpecial::DisplayCard() const {
     case Reverse:
         strSpecialType = "Reverse";
         break;
+    case Normal:
+        strSpecialType = "Normal";
+        break;
+    case ColorChooser:
+        strSpecialType = "ColorChooser";
+        break;
     default:
         strSpecialType = "Unknown";
         break;
     }
 
-    return strDisplay + ", Special Type - " + strSpecialType + "\n";
+    return strDisplay + ", Type - " + strSpecialType + "\n";
 }
